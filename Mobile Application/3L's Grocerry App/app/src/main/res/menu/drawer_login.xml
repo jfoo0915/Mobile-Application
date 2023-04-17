@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/homeFragment"
+            android:checkable="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/productFragment"
+            android:checkable="true"
+            android:title="Product" />
+        <item
+            android:id="@+id/orderFragment"
+            android:checkable="true"
+            android:title="Order" />
+        <item
+            android:id="@+id/paymentFragment"
+            android:title="Payment" />
+        <item
+            android:id="@+id/deliveryFragment"
+            android:checkable="true"
+            android:title="Delivery" />
+        <item
+            android:id="@+id/coinFragment"
+            android:title="Coin" />
+        <item
+            android:id="@+id/setting"
+            android:title="Rating" />
+    </group>
+
+</menu>

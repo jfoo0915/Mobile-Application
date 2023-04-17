@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rating.RateProductFragment" >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <TextView
+        android:id="@+id/txtRateProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Product"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRatingProductName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/txtRatingProductName" />
+
+    <TextView
+        android:id="@+id/txtRateProductDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRatingProductDate"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/txtRatingProductDate" />
+
+    <TextView
+        android:id="@+id/txtRateProductRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Rating"
+        app:layout_constraintBottom_toBottomOf="@+id/spnRate"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/spnRate" />
+
+    <TextView
+        android:id="@+id/txtRateProductComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Comment"
+        app:layout_constraintBottom_toBottomOf="@+id/edtRateProductComment"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/edtRateProductComment" />
+
+    <Spinner
+        android:id="@+id/spnRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/rating"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/txtRatingProductDate" />
+
+    <EditText
+        android:id="@+id/edtRateProductComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Comment..."
+        android:inputType="textPersonName"
+        android:maxLength="150"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/spnRate" />
+
+    <TextView
+        android:id="@+id/txtRatingProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRatingProductDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/txtRatingProductName" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRateProductComment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

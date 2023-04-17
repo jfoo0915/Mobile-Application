@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivery.Delivery1Fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="140dp" />
+
+    <TextView
+        android:id="@+id/txtNameOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/name_label"
+        app:layout_constraintBottom_toBottomOf="@+id/edtNameOut"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/edtNameOut" />
+
+    <TextView
+        android:id="@+id/txtPhoneOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/phoneNo_label"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPhoneOut"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/edtPhoneOut" />
+
+    <TextView
+        android:id="@+id/txtDeliveryOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/deliveryAddress_label"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDeliveryOut"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/edtDeliveryOut" />
+
+    <EditText
+        android:id="@+id/edtNameOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdOutput" />
+
+    <EditText
+        android:id="@+id/edtPhoneOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/hint_phoneNo"
+        android:inputType="number"
+        android:maxLength="12"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameOut" />
+
+    <EditText
+        android:id="@+id/edtDeliveryOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/hint_address"
+        android:inputType="textPersonName"
+        android:maxLength="120"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneOut" />
+
+    <Button
+        android:id="@+id/btnDeliveryDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDeliveryOut" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="ID:"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIdOutput"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/txtIdOutput" />
+
+    <TextView
+        android:id="@+id/txtIdOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

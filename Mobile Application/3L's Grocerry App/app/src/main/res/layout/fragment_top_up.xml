@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.TopUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnRM10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 10"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRM5"
+        app:layout_constraintEnd_toStartOf="@+id/btnRM15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRM5"
+        app:layout_constraintTop_toTopOf="@+id/btnRM5" />
+
+    <Button
+        android:id="@+id/btnTopUpNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRM15" />
+
+    <TextView
+        android:id="@+id/txtRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="RM:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRM"
+        app:layout_constraintStart_toEndOf="@+id/txtRM"
+        app:layout_constraintTop_toTopOf="@+id/txtRM"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnRM5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RM 5"
+        app:layout_constraintEnd_toStartOf="@+id/btnRM10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTopUp" />
+
+    <Button
+        android:id="@+id/btnRM15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRM10"
+        app:layout_constraintTop_toTopOf="@+id/btnRM10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

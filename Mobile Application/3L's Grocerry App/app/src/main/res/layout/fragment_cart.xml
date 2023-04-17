@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment" >
+
+    <TextView
+        android:id="@+id/lblCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#238A81"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="CART"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="16dp"
+        android:text="Place Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblTotal"
+        app:layout_constraintTop_toBottomOf="@+id/edtVoucherCode"
+        app:rippleColor="#4291B6" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="TOTAL"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiscount" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTotal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="@+id/lblCart"
+        app:layout_constraintTop_toTopOf="@+id/lblCart" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#E4DADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCart" />
+
+    <TextView
+        android:id="@+id/lblShowCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Order List"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/lblCart" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:listitem="@layout/view_cart" />
+
+    <EditText
+        android:id="@+id/edtVoucherCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Promo Code"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblVoucher" />
+
+    <TextView
+        android:id="@+id/txtDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDiscount" />
+
+    <TextView
+        android:id="@+id/lblVoucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Promo Code (if any)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvCart" />
+
+    <TextView
+        android:id="@+id/txtSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="xxx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSubtotal" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:text="apply"
+        app:layout_constraintStart_toEndOf="@+id/edtVoucherCode"
+        app:layout_constraintTop_toTopOf="@+id/edtVoucherCode" />
+
+    <TextView
+        android:id="@+id/lblDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Discount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubtotal" />
+
+    <TextView
+        android:id="@+id/lblSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Subtotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVoucherCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

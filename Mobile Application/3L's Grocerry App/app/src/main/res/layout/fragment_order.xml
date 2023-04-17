@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.OrderFragment">
+
+    <TextView
+        android:id="@+id/txtOrderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="XXX"
+        app:layout_constraintStart_toEndOf="@+id/lblProductName"
+        app:layout_constraintTop_toBottomOf="@+id/imgOrder" />
+
+    <TextView
+        android:id="@+id/lblProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgOrder" />
+
+    <ImageView
+        android:id="@+id/imgOrder"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddCart"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lblCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Category"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblProductName" />
+
+    <TextView
+        android:id="@+id/lblQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Quantity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrice" />
+
+    <TextView
+        android:id="@+id/txtOrderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="XXX"
+        app:layout_constraintStart_toEndOf="@+id/lblPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Price"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCategory" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="XXX"
+        app:layout_constraintStart_toEndOf="@+id/lblCategory"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrderName" />
+
+    <TextView
+        android:id="@+id/lblAddCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#238A81"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Order"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ckcoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Check out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkCoin" />
+
+    <EditText
+        android:id="@+id/edtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/lblQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrderPrice" />
+
+    <CheckBox
+        android:id="@+id/chkCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Apply Coin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtQuantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
